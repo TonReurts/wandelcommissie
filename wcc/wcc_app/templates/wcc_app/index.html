@@ -1,0 +1,9 @@
+{% if alle_tochten_list %}
+    <ul>
+    {% for tocht in alle_tochten_list %}
+        <li><a href="/wcc_app/{{ tocht.id }}/">{{ tocht.naam }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Geen tochten gevonden.</p>
+{% endif %}
